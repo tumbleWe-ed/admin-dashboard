@@ -1,0 +1,82 @@
+.icons {
+    height: 25px;
+    width: auto;
+    float: left;
+}
+
+.profile-pic {
+    height: 50px;
+    width: auto;
+    border-radius: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template: 30% 70%/ 20% 80%;
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 100px 300px 300px;
+    width: 200px;
+    background-color: #1892d3;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.header {
+    grid: 1/2;
+}
+
+.header-row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 300px;
+}
+
+.header-row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-btns button{
+    color: white;
+    background-color: rgb(85, 75, 220);
+    border-radius: 10px;
+}
+/** Main Content**/
+.content {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template: 1fr 1fr/ 950px 200px;
+    grid-gap: 12px;
+
+}
+
+.projects {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.announcements {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.trending {
+    grid-row: 2;
+    grid-column: 2;
+}
